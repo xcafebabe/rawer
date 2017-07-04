@@ -1,0 +1,17 @@
+version: '3'
+services:
+  hexo:
+    build:
+      context: .
+      args:
+        - NODE_COMMAND=${NODE_COMMAND}
+        - BROWSERSYNC_PORT_UI=${BROWSERSYNC_PORT_UI}
+        - BROWSERSYNC_PORT=${BROWSERSYNC_PORT}
+        - RAWER_PATH=${RAWER_PATH}
+    image: xcafebabe/rawer
+    container_name: rawer
+    ports:
+      - "${BROWSERSYNC_PORT_UI}"
+      - "${BROWSERSYNC_PORT}"
+    volumes:      
+      - .:${RAWER_PATH}
