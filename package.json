@@ -1,0 +1,28 @@
+{
+  "name": "rawer",
+  "version": "1.0.0",
+  "description": "Multipurpose static html/css/js site builder",  
+  "scripts": {
+    "start": "echo \"Running watch mode\"",
+    "build": "echo \"Running build mode\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcafebabe/rawer.git"
+  },
+  "keywords": [
+    "html5",
+    "gulp",
+    "build-tool",
+    "css3",
+    "html5up",
+    "strate"
+  ],
+  "author": "Luis Toubes <luis@toub.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcafebabe/rawer/issues"
+  },
+  "homepage": "https://github.com/xcafebabe/rawer#readme"
+}
