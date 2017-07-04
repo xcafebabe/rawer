@@ -1,7 +1,7 @@
 {
   "name": "rawer",
   "version": "1.0.0",
-  "description": "Multipurpose static html/css/js site builder",  
+  "description": "Multipurpose static html/css/js site builder",
   "scripts": {
     "start": "echo \"Running watch mode\"",
     "build": "echo \"Running build mode\"",
@@ -24,5 +24,39 @@
   "bugs": {
     "url": "https://github.com/xcafebabe/rawer/issues"
   },
-  "homepage": "https://github.com/xcafebabe/rawer#readme"
+  "homepage": "https://github.com/xcafebabe/rawer#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-bump": "^2.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^5.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-debug": "^3.1.0",
+    "gulp-extname": "^0.2.2",
+    "gulp-filter": "^5.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-manifest": "^0.1.1",
+    "gulp-print": "^2.0.1",
+    "gulp-replace": "^0.6.1",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "js-yaml": "^3.8.4",
+    "panini": "^1.4.0",
+    "rimraf": "^2.6.1",
+    "yargs": "^8.0.2"
+  }
 }
