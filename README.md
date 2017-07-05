@@ -61,21 +61,21 @@ In both approaches you will get a ready to ship version inside `dist` folder.
 
 ## Develop mode
 
-By default scripts will create a release but you can start a server and watch process in order to add more magic.
+By default Rawer will create a release, but you can also start Rawer in serve & watch mode in order to add more magic.
 
 #### Docker
 
-In `.env` file replace value from `build` to `start` in property `NODE_COMMAND`, then start your container `sudo docker-composer up`
+In `.env` search property `NODE_COMMAND` and replace value from `build` to `start`, then just turn on your container through docker-compose (`sudo docker-composer up`)
 
 #### Local
 
-Just start the project in server and watch mode using `npm start`
+Just start the project in serve & watch mode using `npm start`
 
-In both approaches you will get current version loaded in http://localhost:3000
+In both approaches you will get current version in http://localhost:3000
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://gitlab.com/xcafebabe/xcafebabe.gitlab.io/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/xcafebabe/rawer/tags).
 
 ## Authors
 
