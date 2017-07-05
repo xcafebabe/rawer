@@ -1,15 +1,16 @@
 # Rawer Builder
 
-If you want to use a nice static html/css/js theme like [HTML5UP Strata](https://html5up.net/strata) and apply some optimization techniques to release a version, sometimes source code doesn't provide a way to do that. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
+It happens sometimes that an original source code from a nice html/css/js theme doesn't provide a way to build an optimized and shippable release of the theme. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
+
+As example we use [HTML5UP Strata](https://html5up.net/strata).
 
 ## Getting Started
 
-**Need translation**
-Tienes dos approach, Dockerized y Localized version. La unica diferencia entre las dos es que con Docker no te hara falta tener instalado NodeJS y sus dependencias globales.
+Rawer offers two ways of work, **Dockerized** (recommended) and **Localized** versions. With **Dockerized** version there is not need to install NodeJS and project global dependencies.
 
 ### Prerequisites
 
-Si usas Docker, al menos estas versiones
+#### Docker
 
 * Docker (https://www.docker.com/)
 
@@ -25,15 +26,20 @@ $> docker-compose --version
 docker-compose version 1.11.2, build dfed245
 ```
 
-Si usas NodeJS, al menos estas versiones
+#### Local
 
-node --version
-
-npm --version
+* NodeJS (https://nodejs.org)
+```
+$> node --version
+v7.10.0
+$> npm --version
+v4.2.0
+```
 
 ### Install & Build a Release 
 
-Docker Approach
+#### Docker
+
 ```
 git clone https://github.com/xcafebabe/rawer.git   \
   && cd rawer \
@@ -41,7 +47,8 @@ git clone https://github.com/xcafebabe/rawer.git   \
   && sudo docker-compose up
 ```
 
-Node Approach
+#### Local
+
 ```
 git clone https://github.com/xcafebabe/rawer.git   \
   && cd rawer \
@@ -50,19 +57,21 @@ git clone https://github.com/xcafebabe/rawer.git   \
   && npm run build
 ```
 
-## To Develop Development
+In both approaches you will get a ready to ship version inside `dist` folder.
 
-Podra acceder a la version de desarrollo en http://localhost:3000
+## Develop mode
 
-Docker Approach
+By default scripts will create a release but you can start a server and watch process in order to add more magic.
 
-En tu .env reemplace el valor de NODE_COMMAND por `start` y sudo docker-compose up
+#### Docker
 
+In `.env` file replace value from `build` to `start` in property `NODE_COMMAND`, then start your container `sudo docker-composer up`
 
-Node Approach
-npm start
+#### Local
 
+Just start the project in server and watch mode using `npm start`
 
+In both approaches you will get current version loaded in http://localhost:3000
 
 ## Versioning
 
