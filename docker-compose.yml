@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hexo:
+  rawer:
     build:
       context: .
       args:
@@ -9,7 +9,7 @@ services:
     image: xcafebabe/rawer
     container_name: rawer
     ports:
-      - 3000      
-      - 3001
+      - "3000:3000"
+      - "3001:3001"
     volumes:      
       - .:${RAWER_PATH}
