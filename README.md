@@ -1,6 +1,6 @@
 # Rawer Builder
 
-If you want to use a nice static html/css/js theme, sometimes source code doesn't have scripts to optimize released versions. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
+If you want to use a nice static html/css/js theme like [HTML5UP Strata](https://html5up.net/strata) and apply some optimization techniques to release a version, sometimes source code doesn't provide a way to do that. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ node --version
 
 npm --version
 
-### Install & Run
+### Install & Build a Release 
 
 Docker Approach
 ```
@@ -40,8 +40,6 @@ git clone https://github.com/xcafebabe/rawer.git   \
   && cp env-example .env \
   && sudo docker-compose up
 ```
-Once the site is up & running (wait until you see `Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.` on the console), open a browser
-and go to http://localhost:4000
 
 Node Approach
 ```
@@ -49,12 +47,22 @@ git clone https://github.com/xcafebabe/rawer.git   \
   && cd rawer \
   && npm i gulp-cli -g  \
   && npm install \
-  && npm start \
+  && npm run build
 ```
 
-## Development
+## To Develop Development
 
-TBD
+Podra acceder a la version de desarrollo en http://localhost:3000
+
+Docker Approach
+
+En tu .env reemplace el valor de NODE_COMMAND por `start` y sudo docker-compose up
+
+
+Node Approach
+npm start
+
+
 
 ## Versioning
 
