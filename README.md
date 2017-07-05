@@ -1,4 +1,4 @@
-# Rawer Builder ![Stone Pick](https://github.com/xcafebabe/rawer/raw/master/src/assets/images/pick.jpg) ![Raw Stone](https://github.com/xcafebabe/rawer/raw/master/src/assets/images/stone.jpg)
+# Rawer Builder  ![Raw Stone](https://github.com/xcafebabe/rawer/raw/master/src/assets/images/stone.png)
 
 It happens sometimes that an original source code from a nice html/css/js theme doesn't provide a way to build an optimized and shippable release of the theme. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
 
