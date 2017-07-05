@@ -31,5 +31,5 @@ PATHS:
     - "src/assets/scripts/jquery.poptrox.min.js"
     - "src/assets/scripts/skel.min.js"
     - "src/assets/scripts/util.js"
-    - "src/assets/scripts/main.js"
+    - "src/assets/scripts/app.js"
     
