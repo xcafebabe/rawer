@@ -41,4 +41,4 @@ EXPOSE 3000 3001
 ## Development Purposes
 USER node
 
-CMD echo "*************8${NODE_COMMAND}" && npm install && npm run ${NODE_COMMAND}
+ENTRYPOINT ["sh", "-c", "${RAWER_PATH}/entrypoint.sh"]

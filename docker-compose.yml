@@ -8,6 +8,9 @@ services:
         - RAWER_PATH=${RAWER_PATH}
     image: xcafebabe/rawer
     container_name: rawer
+    environment: 
+      - NODE_COMMAND=${NODE_COMMAND}        
+      - RAWER_PATH=${RAWER_PATH}
     ports:
       - "3000:3000"
       - "3001:3001"
