@@ -7,15 +7,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luis Toubes - Portfolio</title>
-  <meta name="description" content="Luis Toubes - Full-Stack Web Developer and Entrepreneur"/>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="product" />
-  <meta property="og:title" content="Luis Toubes - Full-Stack Web Developer and Entrepreneur " />
-  <meta property="og:description" content="Software Engineer with demonstrated expertise in developing and implementing highly technical, user friendly web applications."/>
-  <meta property="og:url" content="https://toub.es" />
-  <meta property="og:site_name" content="Luis Toubes - Portfolio" />
-  <meta property="og:image" content="" />
+  <title>{{rawer.title}}</title>
+  <meta name="description" content="{{rawer.description}}"/>
+  {{> graph}}
   <base href="/" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />  
   <!--[if lte IE 8]><script src="scripts/ie/html5shiv.js"></script><![endif]-->
@@ -33,7 +27,6 @@
 <body>
   {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} 
   {{> body}}
-
   
   <!--[if lte IE 8]><script src="scripts/ie/respond.min.js"></script><![endif]-->
   <script src="scripts/main.js"></script>
