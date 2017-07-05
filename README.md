@@ -1,4 +1,4 @@
-# Rawer Builder
+# Rawer Builder ![Stone Pick](https://github.com/xcafebabe/rawer/raw/master/src/assets/images/pick.jpg) ![Raw Stone](https://github.com/xcafebabe/rawer/raw/master/src/assets/images/stone.jpg)
 
 It happens sometimes that an original source code from a nice html/css/js theme doesn't provide a way to build an optimized and shippable release of the theme. Rawer is just another attempt of a builder boilerplate to help you save some time releasing your work.
 
@@ -84,3 +84,5 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+Thanks to [Junksprite](http://junksprite.deviantart.com/) & [NeoZ7](http://neoz7.deviantart.com/) for artworks.
