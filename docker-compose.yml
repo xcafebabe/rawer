@@ -4,14 +4,12 @@ services:
     build:
       context: .
       args:
-        - NODE_COMMAND=${NODE_COMMAND}
-        - BROWSERSYNC_PORT_UI=${BROWSERSYNC_PORT_UI}
-        - BROWSERSYNC_PORT=${BROWSERSYNC_PORT}
+        - NODE_COMMAND=${NODE_COMMAND}        
         - RAWER_PATH=${RAWER_PATH}
     image: xcafebabe/rawer
     container_name: rawer
     ports:
-      - "${BROWSERSYNC_PORT_UI}"
-      - "${BROWSERSYNC_PORT}"
+      - 3000      
+      - 3001
     volumes:      
       - .:${RAWER_PATH}
