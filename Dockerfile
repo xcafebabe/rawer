@@ -9,8 +9,24 @@ ENV RAWER_PATH ${RAWER_PATH}
 ARG NODE_COMMAND=build
 ENV NODE_COMMAND ${NODE_COMMAND}
 
-## Installing gulp-cli Hexo Cli Component
-RUN npm install gulp-cli -g
+## Installing gulp-cli and dependencies for gulp-imagemin
+RUN npm install gulp-cli -g \ 
+  && apk --update --no-cache \
+		add  \
+    automake \
+		git \
+		alpine-sdk  \
+		nasm  \
+		autoconf  \
+		build-base \
+		zlib \
+		zlib-dev \
+		libpng \
+		libpng-dev\
+		libwebp \
+		libwebp-dev \
+		libjpeg-turbo \
+		libjpeg-turbo-dev
 
 WORKDIR ${RAWER_PATH}
 ## Ignoring files from node_modules
@@ -25,4 +41,4 @@ EXPOSE 3000 3001
 ## Development Purposes
 USER node
 
-CMD npm install && npm run ${NODE_COMMAND}
+CMD echo "*************8${NODE_COMMAND}" && npm install && npm run ${NODE_COMMAND}
