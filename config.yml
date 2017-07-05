@@ -1,0 +1,38 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "src/assets/scripts/ie/*"
+    - "!src/assets/scripts/*.js"
+    - "!src/assets/{images,sass}/**/*"
+
+  # Font Paths to Sass libraries, which can then be loaded with @import
+  # Usually locate in bower_components
+  fonts:    
+  # Paths to Extra Sass libraries, with are combined in main.css
+  sassMain : 
+    - "src/assets/sass/main.scss"
+    - "src/assets/sass/ie8.scss"
+  sass: 
+    #- "bower_components/blabla/**/*.css"
+    
+  # Paths to JavaScript libraries, which are combined into one file
+  javascript:
+    - "src/assets/scripts/jquery.min.js"
+    - "src/assets/scripts/jquery.poptrox.min.js"
+    - "src/assets/scripts/skel.min.js"
+    - "src/assets/scripts/util.js"
+    - "src/assets/scripts/main.js"
+    
